@@ -7,13 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel Mysql Docker Boilerplate
-
-This is a docker laravel 10.8, php 8.1, mysql, nginx starter boilerplate.
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Application
+## About Laravel Application
 
 Simple demo laravel console application for pulling data from external api's into a mongo database using docker as a bonus.
 Idea project I took it from [Upwork]: https://www.upwork.com/jobs/span-class-highlight-Laravel-span-Python-pull-data-from-API-endpoints-ASAP_~017f10c78bd727aa27/ "APN"
