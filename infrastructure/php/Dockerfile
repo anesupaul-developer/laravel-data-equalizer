@@ -12,7 +12,10 @@ RUN apt-get update && apt-get install -y \
         unzip \
         p7zip-full \
         sendmail \
-        ca-certificates
+        ca-certificates \
+        libcurl4-openssl-dev \
+        pkg-config \
+        libssl-dev
 
 # Clear cache
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
@@ -20,12 +23,16 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 # Install PHP extensions
 RUN docker-php-ext-install zip mysqli pdo pdo_mysql opcache
 
+RUN pecl install mongodb
+RUN echo "extension=mongodb.so" >> /usr/local/etc/php/conf.d/mongodb.ini
+
 # Install composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-# Create system user to run Composer and Artisan Commands
+# Create system user
 RUN useradd -G www-data,root -u $uid -d /home/$user $user
 RUN mkdir -p ../db
+RUN mkdir -p ../database
 RUN mkdir -p /home/$user/.composer && \
     chown -R $user:$user /home/$user
 
