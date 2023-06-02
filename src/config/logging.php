@@ -117,6 +117,10 @@ return [
         'emergency' => [
             'path' => storage_path('logs/laravel.log'),
         ],
+        'mongo'=> [
+            'driver' => 'single',
+            'path' => storage_path('logs/mongo.log'),
+        ],
     ],
 
 ];

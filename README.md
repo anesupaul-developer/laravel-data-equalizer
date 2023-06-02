@@ -11,3 +11,8 @@
 
 Simple demo laravel console application for pulling data from external api's into a mongo database using docker as a bonus.
 Idea project I took it from [Upwork](https://www.upwork.com/jobs/span-class-highlight-Laravel-span-Python-pull-data-from-API-endpoints-ASAP~017f10c78bd727aa27)
+
+For demo purpose, I query a jokes api, store information into the database and get the data via an api endpoint of ours.
+On your terminal run 
+    - docker exec -it ph php artisan random:joke # This command fetches a single random joke and stores into mongodb
+    - visit http://localhost:8088/api/joke using your browser or postman to see data retrieved from the above command
