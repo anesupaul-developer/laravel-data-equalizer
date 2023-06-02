@@ -29,7 +29,7 @@ services:
                 uid: 1000
             context: .
             dockerfile: ./php/Dockerfile
-        container_name: application_php81
+        container_name: ph
         ports:
             - "9000:9000"
         volumes:

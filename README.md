@@ -10,4 +10,4 @@
 ## About Laravel Application
 
 Simple demo laravel console application for pulling data from external api's into a mongo database using docker as a bonus.
-Idea project I took it from [Upwork]: https://www.upwork.com/jobs/span-class-highlight-Laravel-span-Python-pull-data-from-API-endpoints-ASAP_~017f10c78bd727aa27/ "APN"
+Idea project I took it from [Upwork](https://www.upwork.com/jobs/span-class-highlight-Laravel-span-Python-pull-data-from-API-endpoints-ASAP~017f10c78bd727aa27)
