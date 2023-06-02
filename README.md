@@ -14,5 +14,6 @@ Idea project I took it from [Upwork](https://www.upwork.com/jobs/span-class-high
 
 For demo purpose, I query a jokes api, store information into the database and get the data via an api endpoint of ours.
 On your terminal run 
-    - docker exec -it ph php artisan random:joke # This command fetches a single random joke and stores into mongodb
-    - visit http://localhost:8088/api/joke using your browser or postman to see data retrieved from the above command
+
+1. docker exec -it ph php artisan random:joke # This command fetches a single random joke and stores into mongodb 
+2. visit http://localhost:8088/api/joke using your browser or postman to see data retrieved from the above command
